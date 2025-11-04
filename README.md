@@ -36,72 +36,40 @@ This app supports **Dark & Light themes**, task filters, smooth animations, and 
 ```bash
 npm install
 
-npx expo start
+   ```bash
+   npx expo start
+   ```
 
-TODO-APP/
-│
-├── app/
-│   ├── index.tsx            # Main screen
-│   └── _layout.tsx          # Router layout
-│
-├── components/
-│   ├── Header.tsx           # "TODO" title & theme toggle
-│   ├── ThemeToggle.tsx      # Sun/Moon icon toggle
-│   ├── TodoInput.tsx        # Create todo field
-│   ├── TodoItem.tsx         # Individual task row
-│
-├── context/
-│   └── ThemeContext.tsx     # Global light/dark state
-│
-├── theme/
-│   └── colors.ts            # Color palette for themes
-│
-├── assets/
-│   ├── icons/               # SVG icons (sun, moon, add, delete, etc.)
-│   └── images/              # Banner background images
-│
-└── README.md
+In the output, you'll find options to open the app in a
 
-## 🧠 Theme System
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-# The app uses a global ThemeContext to toggle light/dark mode:
+You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-const { theme, toggleTheme } = useThemeContext();
+## Get a fresh project
 
+When you're ready, run:
 
-Colors adapt automatically based on theme from:
+```bash
+npm run reset-project
+```
 
-/theme/colors.ts
+This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
+## Learn more
 
-Icons switch dynamically in:
+To learn more about developing your project with Expo, look at the following resources:
 
-/components/ThemeToggle.tsx
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-## 🛠️ Tech Stack
-Tool	Usage
-Expo	App runtime environment
-React Native	UI components
-TypeScript (optional)	Type safety
-expo-router	File-based navigation
-SVG Assets	Crisp scalable icons
-Context API	Theme & state management
+## Join the community
 
-## 🌱 Future Enhancements
+Join our community of developers creating universal apps.
 
-✅ Drag-and-drop list sorting
-
-✅ Persistent storage (AsyncStorage / SQLite / Supabase)
-
-✅ Cloud sync profile & login support
-
-✅ Task reminders / notifications
-
-## 📄 License
-
-This project is released under the MIT License.
-You may use, modify, and distribute freely.
-
-## Built with ❤️ by Lawrence
-
-If you need help deploying or scaling this — I’ve got you 👋
+- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+# TODO-APP
