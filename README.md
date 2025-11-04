@@ -1,3 +1,4 @@
+
 # 📌 TODO App
 
 A beautifully designed **Todo Management** mobile application built with **React Native** and **Expo**, closely inspired by a modern Figma UI.  
@@ -25,6 +26,9 @@ This app supports **Dark & Light themes**, task filters, smooth animations, and 
 | Light Mode | Dark Mode |
 |-----------|-----------|
 | ![Light Screenshot](./assets/screens/light.png) | ![Dark Screenshot]([./assets/screens/dark.png](https://github.com/lawrence1986/TODO-APP/blob/main/Dark%20Mode.jpg)) |
+
+![App Screenshot](https://github.com/username/repo/assets/screens/dark.png](https://github.com/lawrence1986/TODO-APP/blob/main/Dark%20Mode.jpg)))
+
 
 > (You can capture screenshots later and replace the images.)
 
