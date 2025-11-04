@@ -20,7 +20,30 @@ This app supports **Dark & Light themes**, task filters, smooth animations, and 
 | ✅ Organized architecture | Reusable components, clear state management |
 
 ---
-
+##Project Structure
+TODO-APP/
+│
+├── app/
+│   ├── index.tsx            # Main screen
+│   └── _layout.tsx          # Router layout
+│
+├── components/
+│   ├── Header.tsx           # "TODO" title & theme toggle
+│   ├── ThemeToggle.tsx      # Sun/Moon icon toggle
+│   ├── TodoInput.tsx        # Create todo field
+│   ├── TodoItem.tsx         # Individual task row
+│
+├── context/
+│   └── ThemeContext.tsx     # Global light/dark state
+│
+├── theme/
+│   └── colors.ts            # Color palette for themes
+│
+├── assets/
+│   ├── icons/               # SVG icons (sun, moon, add, delete, etc.)
+│   └── images/              # Banner background images
+│
+└── README.md
 
 
 ---
