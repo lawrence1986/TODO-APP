@@ -1,51 +1,107 @@
-# Welcome to your Expo app 👋
+# 📌 TODO App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A beautifully designed **Todo Management** mobile application built with **React Native** and **Expo**, closely inspired by a modern Figma UI.  
+This app supports **Dark & Light themes**, task filters, smooth animations, and a clean minimal layout.
 
-## Get started
+---
 
-1. Install dependencies
+## 🎨 Features
 
-   ```bash
-   npm install
-   ```
+| Feature | Description |
+|--------|-------------|
+| ✅ Add new todos | Create tasks easily with a clean input field |
+| ✅ Mark tasks as complete | Tap on a task to toggle its completion state |
+| ✅ Delete tasks | Remove tasks instantly with the delete icon |
+| ✅ Dark / Light theme support | Seamless theme switching with Figma-accurate icons |
+| ✅ Filters | View **All**, **Active**, or **Completed** tasks |
+| ✅ Modern UI | Styled to match pixel-perfect designs from Figma |
+| ✅ Responsive layout | Works on small + large screens gracefully |
+| ✅ Organized architecture | Reusable components, clear state management |
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🖥️ Screenshots (Add yours later)
 
-In the output, you'll find options to open the app in a
+| Light Mode | Dark Mode |
+|-----------|-----------|
+| ![Light Screenshot](./assets/screens/light.png) | ![Dark Screenshot](./assets/screens/dark.png) |
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+> (You can capture screenshots later and replace the images.)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 🚀 Getting Started
 
-When you're ready, run:
-
+### 1️⃣ Install Dependencies
 ```bash
-npm run reset-project
-```
+npm install
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+npx expo start
 
-## Learn more
+TODO-APP/
+│
+├── app/
+│   ├── index.tsx            # Main screen
+│   └── _layout.tsx          # Router layout
+│
+├── components/
+│   ├── Header.tsx           # "TODO" title & theme toggle
+│   ├── ThemeToggle.tsx      # Sun/Moon icon toggle
+│   ├── TodoInput.tsx        # Create todo field
+│   ├── TodoItem.tsx         # Individual task row
+│
+├── context/
+│   └── ThemeContext.tsx     # Global light/dark state
+│
+├── theme/
+│   └── colors.ts            # Color palette for themes
+│
+├── assets/
+│   ├── icons/               # SVG icons (sun, moon, add, delete, etc.)
+│   └── images/              # Banner background images
+│
+└── README.md
 
-To learn more about developing your project with Expo, look at the following resources:
+## 🧠 Theme System
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+# The app uses a global ThemeContext to toggle light/dark mode:
 
-## Join the community
+const { theme, toggleTheme } = useThemeContext();
 
-Join our community of developers creating universal apps.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-# TODO-APP
+Colors adapt automatically based on theme from:
+
+/theme/colors.ts
+
+
+Icons switch dynamically in:
+
+/components/ThemeToggle.tsx
+
+## 🛠️ Tech Stack
+Tool	Usage
+Expo	App runtime environment
+React Native	UI components
+TypeScript (optional)	Type safety
+expo-router	File-based navigation
+SVG Assets	Crisp scalable icons
+Context API	Theme & state management
+
+## 🌱 Future Enhancements
+
+✅ Drag-and-drop list sorting
+
+✅ Persistent storage (AsyncStorage / SQLite / Supabase)
+
+✅ Cloud sync profile & login support
+
+✅ Task reminders / notifications
+
+## 📄 License
+
+This project is released under the MIT License.
+You may use, modify, and distribute freely.
+
+## Built with ❤️ by Lawrence
+
+If you need help deploying or scaling this — I’ve got you 👋
