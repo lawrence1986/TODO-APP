@@ -20,30 +20,53 @@ This app supports **Dark & Light themes**, task filters, smooth animations, and 
 | ✅ Organized architecture | Reusable components, clear state management |
 
 ---
-##Project Structure
 TODO-APP/
 │
 ├── app/
-│   ├── index.tsx            # Main screen
-│   └── _layout.tsx          # Router layout
+│   ├── index.tsx              # Main screen (lists all todos)
+│   └── _layout.tsx            # Router layout and navigation wrapper
 │
 ├── components/
-│   ├── Header.tsx           # "TODO" title & theme toggle
-│   ├── ThemeToggle.tsx      # Sun/Moon icon toggle
-│   ├── TodoInput.tsx        # Create todo field
-│   ├── TodoItem.tsx         # Individual task row
+│   ├── Header.tsx             # App header: "TODO" title & theme toggle
+│   ├── ThemeToggle.tsx        # Sun/Moon icon toggle button
+│   ├── TodoInput.tsx          # Input field to create new todos
+│   ├── TodoItem.tsx           # Single task row (text + actions)
+│   ├── TodoList.tsx           # Wrapper that maps todos to TodoItem
+│   └── EmptyState.tsx         # Optional: Shown when there are no tasks
 │
 ├── context/
-│   └── ThemeContext.tsx     # Global light/dark state
+│   ├── ThemeContext.tsx       # Provides global light/dark theme
+│   └── TodoContext.tsx        # Provides todo list state globally
 │
 ├── theme/
-│   └── colors.ts            # Color palette for themes
+│   ├── colors.ts              # Centralized color palette for themes
+│   └── typography.ts          # (Optional) Font sizes and weights
 │
 ├── assets/
-│   ├── icons/               # SVG icons (sun, moon, add, delete, etc.)
-│   └── images/              # Banner background images
+│   ├── icons/                 # SVG icons (sun, moon, add, delete, edit)
+│   │   ├── sun.svg
+│   │   ├── moon.svg
+│   │   ├── add.svg
+│   │   ├── delete.svg
+│   │   └── edit.svg
+│   └── images/                # Background or banner images
+│       └── banner-bg.png
 │
-└── README.md
+├── utils/
+│   ├── storage.ts             # LocalStorage or AsyncStorage helpers
+│   └── helpers.ts             # Reusable utility functions (e.g., filters)
+│
+├── hooks/
+│   ├── useTheme.ts            # Custom hook for theme access
+│   └── useTodos.ts            # Custom hook for todo CRUD logic
+│
+├── styles/
+│   └── global.css             # Global styling (if web project)
+│
+├── package.json
+├── tsconfig.json
+├── .gitignore
+└── README.md                  # Project overview and setup guide
 
 
 ---
