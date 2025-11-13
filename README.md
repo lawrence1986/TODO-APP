@@ -20,53 +20,6 @@ This app supports **Dark & Light themes**, task filters, smooth animations, and 
 | ✅ Organized architecture | Reusable components, clear state management |
 
 
-TODO-APP/
-│
-├── app/
-│   ├── index.tsx              # Main screen – displays list of todos
-│   └── _layout.tsx            # App router layout & navigation wrapper
-│
-├── components/
-│   ├── Header.tsx             # App header (title + theme toggle)
-│   ├── ThemeToggle.tsx        # Light/Dark mode switch
-│   ├── TodoInput.tsx          # Input field for creating todos
-│   ├── TodoItem.tsx           # Single todo row (text + actions)
-│   ├── TodoList.tsx           # Maps and renders all todo items
-│   └── EmptyState.tsx         # UI shown when no tasks exist
-│
-├── context/
-│   ├── ThemeContext.tsx       # Global theme provider
-│   └── TodoContext.tsx        # Global state for todo list management
-│
-├── theme/
-│   ├── colors.ts              # Central theme color definitions
-│   └── typography.ts          # (Optional) Font styles and weights
-│
-├── assets/
-│   ├── icons/                 # SVG icons used across the app
-│   │   ├── sun.svg
-│   │   ├── moon.svg
-│   │   ├── add.svg
-│   │   ├── delete.svg
-│   │   └── edit.svg
-│   └── images/
-│       └── banner-bg.png       # Background or banner image
-│
-├── utils/
-│   ├── storage.ts             # AsyncStorage / LocalStorage helpers
-│   └── helpers.ts             # Shared utility functions
-│
-├── hooks/
-│   ├── useTheme.ts            # Custom hook for theme management
-│   └── useTodos.ts            # Custom hook for todo CRUD operations
-│
-├── styles/
-│   └── global.css             # Global styling (web only)
-│
-├── package.json
-├── tsconfig.json
-├── .gitignore
-└── README.md                  # Project overview & setup guide
 
 
 
