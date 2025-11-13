@@ -19,7 +19,7 @@ This app supports **Dark & Light themes**, task filters, smooth animations, and 
 | ✅ Responsive layout | Works on small + large screens gracefully |
 | ✅ Organized architecture | Reusable components, clear state management |
 
----
+
 TODO-APP/
 │
 ├── app/
@@ -69,7 +69,6 @@ TODO-APP/
 └── README.md                  # Project overview & setup guide
 
 
----
 
 ## 🚀 Getting Started
 
