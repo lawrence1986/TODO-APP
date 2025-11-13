@@ -23,50 +23,50 @@ This app supports **Dark & Light themes**, task filters, smooth animations, and 
 TODO-APP/
 │
 ├── app/
-│   ├── index.tsx              # Main screen (lists all todos)
-│   └── _layout.tsx            # Router layout and navigation wrapper
+│   ├── index.tsx              # Main screen – displays list of todos
+│   └── _layout.tsx            # App router layout & navigation wrapper
 │
 ├── components/
-│   ├── Header.tsx             # App header: "TODO" title & theme toggle
-│   ├── ThemeToggle.tsx        # Sun/Moon icon toggle button
-│   ├── TodoInput.tsx          # Input field to create new todos
-│   ├── TodoItem.tsx           # Single task row (text + actions)
-│   ├── TodoList.tsx           # Wrapper that maps todos to TodoItem
-│   └── EmptyState.tsx         # Optional: Shown when there are no tasks
+│   ├── Header.tsx             # App header (title + theme toggle)
+│   ├── ThemeToggle.tsx        # Light/Dark mode switch
+│   ├── TodoInput.tsx          # Input field for creating todos
+│   ├── TodoItem.tsx           # Single todo row (text + actions)
+│   ├── TodoList.tsx           # Maps and renders all todo items
+│   └── EmptyState.tsx         # UI shown when no tasks exist
 │
 ├── context/
-│   ├── ThemeContext.tsx       # Provides global light/dark theme
-│   └── TodoContext.tsx        # Provides todo list state globally
+│   ├── ThemeContext.tsx       # Global theme provider
+│   └── TodoContext.tsx        # Global state for todo list management
 │
 ├── theme/
-│   ├── colors.ts              # Centralized color palette for themes
-│   └── typography.ts          # (Optional) Font sizes and weights
+│   ├── colors.ts              # Central theme color definitions
+│   └── typography.ts          # (Optional) Font styles and weights
 │
 ├── assets/
-│   ├── icons/                 # SVG icons (sun, moon, add, delete, edit)
+│   ├── icons/                 # SVG icons used across the app
 │   │   ├── sun.svg
 │   │   ├── moon.svg
 │   │   ├── add.svg
 │   │   ├── delete.svg
 │   │   └── edit.svg
-│   └── images/                # Background or banner images
-│       └── banner-bg.png
+│   └── images/
+│       └── banner-bg.png       # Background or banner image
 │
 ├── utils/
-│   ├── storage.ts             # LocalStorage or AsyncStorage helpers
-│   └── helpers.ts             # Reusable utility functions (e.g., filters)
+│   ├── storage.ts             # AsyncStorage / LocalStorage helpers
+│   └── helpers.ts             # Shared utility functions
 │
 ├── hooks/
-│   ├── useTheme.ts            # Custom hook for theme access
-│   └── useTodos.ts            # Custom hook for todo CRUD logic
+│   ├── useTheme.ts            # Custom hook for theme management
+│   └── useTodos.ts            # Custom hook for todo CRUD operations
 │
 ├── styles/
-│   └── global.css             # Global styling (if web project)
+│   └── global.css             # Global styling (web only)
 │
 ├── package.json
 ├── tsconfig.json
 ├── .gitignore
-└── README.md                  # Project overview and setup guide
+└── README.md                  # Project overview & setup guide
 
 
 ---
